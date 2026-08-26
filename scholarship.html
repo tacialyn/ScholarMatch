@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scholarship Matching Platform — Tiaong, Quezon</title>
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+
+<div class="glow-orb glow-1"></div>
+<div class="glow-orb glow-2"></div>
+<div class="glow-orb glow-3"></div>
+
+<section class="hero">
+    <div class="hero-illustration"></div>
+    <img src="logo_full.png" alt="ScholarMatch" class="site-logo">    <p class="eyebrow" style="margin-bottom: 20px;">Your scholarship finder</p>
+    <p>Answer three quick questions below, and see which scholarships fit your profile 
+      — updated live as you choose.</p>
+      </section>
+
+       <p class="section-label">How it works</p>
+  <div class="steps">
+    <div class="step"><div class="step-num">01</div><p>Answer three quick questions about your grade level, strand, and category</p></div>
+    <div class="step"><div class="step-num">02</div><p>Results update live — no need to press submit</p></div>
+    <div class="step"><div class="step-num">03</div><p>	Tap any card to see the full details of that scholarship</p></div>
+    <div class="step"><div class="step-num">04</div><p>Check the official site or contact info to apply</p></div>
+  </div>
+
+<div class="page-frame">
+    <p class="section-label">Your profile</p>
+  <div class="form-card">
+    <div class="form-grid">
+      <div class="field">
+        <label for="gradeLevel">Grade level</label>
+        <select id="gradeLevel">
+          <option value="all">All</option>
+          <option value="grade11">Grade 11</option>
+          <option value="grade12">Grade 12</option>
+          <option value="college">College</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="strand">Strand / course</label>
+        <select id="strand">
+          <option value="all">All</option>
+          <option value="STEM">STEM</option>
+          <option value="ABM">ABM</option>
+          <option value="HUMSS">HUMSS</option>
+          <option value="GAS">GAS</option>
+          <option value="TVL">TVL</option>
+          <option value="any">Any / open</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="category">Scholarship category</label>
+        <select id="category">
+          <option value="all">All</option>
+          <option value="Academic">Academic / merit-based</option>
+          <option value="Financial">Financial need-based</option>
+          <option value="Athletic">Athletic / talent-based</option>
+          <option value="Course-specific">Course-specific</option>
+          <option value="Underrepresented">Underrepresented groups</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="results-header">
+    <p class="section-label" style="margin-bottom:0">Scholarships for you</p>
+    <span class="results-count" id="resultsCount"></span>
+  </div>
+  <div class="cards" id="cardsContainer"></div>
+
+
+</div>
+
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <div class="modal-title" id="modalTitle"></div>
+        <div class="modal-meta" id="modalMeta"></div>
+      </div>
+      <button class="modal-close" id="modalClose">&#10005;</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script src="scholarships.js"></script>
+<script src="script.js"></script>
+</body>
+<div class="return-btn">
+    <a href="index.html"><button class="active">Return</button></a>
+  </div>
+
+  <footer class="site-footer">
+  <div class="footer-content">
+
+    <div class="footer-about">
+      <img src="logo_full.png" alt="ScholarMatch" class="footer-logo">
+
+      <p class="footer-description">
+        ScholarMatch is a student-friendly scholarship finder designed to
+        help students discover opportunities that match their grade level,
+        strand, course, and needs.
+      </p>
+    </div>
+
+    <div class="footer-section">
+      <h3>About</h3>
+      <p>Helping students find scholarship opportunities without the hassle of searching through scattered information.</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="scholarship.html">Find Scholarships</a>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>Bractancia, Lyn A.</p>
+      <p>tacia.lyn08@gmail.com</p>
+      <p>Tiaong, Quezon</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 ScholarMatch. All rights reserved.</p>
+    <p>Made for students, by students.</p>
+  </div>
+</footer>
+</html>
